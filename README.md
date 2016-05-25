@@ -23,7 +23,7 @@ Also the command port 6600 is exposed.
 Simple Python script that automatically randomly enqueues songs from the playlist
 'Auto' into MPD.
 
-## Snapcat
+## Snapcast
 
 Fetches and builds the latest snapcast server (https://github.com/badaix/snapcast).
 Call with `-s 'pipe:///fifo/pcmstream?name=MPD'` and import the /fifo volume from MPD
