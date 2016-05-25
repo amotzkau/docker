@@ -100,7 +100,11 @@ def chooseSong():
 
 def updatePlaylist():
     status = client.status()
-    pos = int(status['song'])
+
+    if 'song' in status:
+        pos = int(status['song'])
+    else:
+        pos = 0
     length = int(status['playlistlength'])
 
     client.command_list_ok_begin()
