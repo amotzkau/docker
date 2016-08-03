@@ -1,6 +1,6 @@
-FROM debian
+FROM debian:jessie-backports
 
-RUN apt-get update && apt-get install -y --no-install-recommends mpd libasound2-plugins
+RUN apt-get update && apt-get install -t jessie-backports -y --no-install-recommends mpd libasound2-plugins
 
 RUN mkdir /music /playlists /db /fifo && \
     chown -R mpd:audio /music /playlists /db /fifo
