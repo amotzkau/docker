@@ -1,6 +1,6 @@
 FROM debian
 
-RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates git build-essential debhelper dh-systemd autoconf automake libtool libupnp6-dev libcurl4-gnutls-dev libmpdclient-dev libexpat1-dev init-system-helpers
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates git build-essential debhelper dh-systemd autoconf automake libtool libupnp6-dev libcurl4-gnutls-dev libmpdclient-dev libexpat1-dev init-system-helpers pkg-config
 
 RUN mkdir -p /usr/src && cd /usr/src && \
     git clone https://github.com/medoc92/libupnpp.git && \
