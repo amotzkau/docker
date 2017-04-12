@@ -14,7 +14,7 @@ RUN mkdir -p /usr/src && cd /usr/src && \
     cd upmpdcli && \
     ./autogen.sh && \
     dpkg-buildpackage -b -us -uc && \
-    dpkg -i ../upmpdcli*.deb
+    dpkg -i ../upmpdcli_*.deb
 
 RUN useradd -m upmpd
 
