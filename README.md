@@ -26,8 +26,7 @@ Simple Python script that automatically randomly enqueues songs from the playlis
 ## Snapcast
 
 Fetches and builds the latest snapcast server (https://github.com/badaix/snapcast).
-Call with `-s 'pipe:///fifo/pcmstream?name=MPD'` and import the /fifo volume from MPD
-to stream its music.
+It is configured to stream the music from MPD.
 
 ## upmpdcli
 
